@@ -60,5 +60,3 @@ Let's try to explain the fields of access records in this file.
 244 - object size of requested resource."
 
 echo '10. Generate an ASCII bar-chart showing the number of requests per minute.'
-
-   for time in ${TIME[@]}; do echo -n "$time: "; grep -c $time /root/access_log; done

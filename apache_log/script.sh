@@ -47,6 +47,8 @@ echo '8. For each of the top 10 IPs, show the top 5 pages requested and the numb
 echo '9. Please explain what you think is going on in this log-file.'
 echo "This is an example of Apache Web Server log file, which contains aceess records to the Web server.
 Let's try to explain the fields of access records in this file.
+Here is an example:
+46.182.3.34 - - [21/Mar/2011:20:47:54 +0900] "GET /%22osCsid=%22%20+download HTTP/1.1" 200 244
 46.182.3.34 - Client's IP address, which want to get access to the Web server;
 '- -' - 'two hyphens': first hyphen is a user's identity, and the second hyphen is username, which is assigned to user after authentication;  
 [21/Mar/2011:20:47:54 +0900] - date and time, when the Web server got request;

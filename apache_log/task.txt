@@ -17,7 +17,7 @@ e.g.
 2011:06:03 12 ############
 2011:06:04 11 ###########
 
-11. Write a shell script that would do this every hour (run by cron, provide crontab entry) and generate a html report.
+   11. Write a shell script that would do this every hour (run by cron, provide crontab entry) and generate a html report.
 
 Part 2: Pythonista
 Do everything above with the python script.

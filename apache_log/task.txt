@@ -1,0 +1,26 @@
+Attached is a sample Apache log-file. Using standard command-line tools  (hint: awk, cut, grep, uniq, sort; awk usage for most of the tasks preferred), parse the file to produce the following:
+
+Part 1. Hand-on logs parsing.
+
+   1.  The top 10 IPs making the most requests, displaying the IP address and number of requests made.
+   2.  Who is the owner of these IPs. No need to give answer for all, only few.
+   3.  Top 10 requested pages and the number of requests made for each.
+   4.  Percentage of successful requests.
+   5.  Percentage of unsuccessful requests.
+   6.  Top 10 unsuccessful page requests.
+   7.  The total number of requests made every minute in the time period covered.
+   8.  For each of the top 10 IPs, show the top 5 pages requested and the number of requests for each.
+   9.  Please explain what you think is going on in this log-file.
+   10. Generate an ASCII bar-chart showing the number of requests per minute.
+
+e.g.
+2011:06:03 12 ############
+2011:06:04 11 ###########
+
+11. Write a shell script that would do this every hour (run by cron, provide crontab entry) and generate a html report.
+
+Part 2: Pythonista
+Do everything above with the python script.
+   1. Python script should take filename of log file as argument: (script.py sample_access_log.zip). It should recognize the file type, either it is plain text, zip or gzip.
+   2. It should produce html report with all those items above (except the owners).
+   3. It should produce report in form of PNG or SVG image which shows the traffic graph for tom 10 IP addresses by time (Y - number of requests, X - time).
